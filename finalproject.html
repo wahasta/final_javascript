@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="finalproject.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+.body{
+    height: 200dvh;
+    background-image: url(pb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 50px;
+}
+.navbar {
+    display: flex; 
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(149, 149, 149);
+}
+
+.navbar a:hover{
+    text-decoration: none;
+    color: rgb(172, 0, 0);
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.navbar img {
+    width: 100px;
+    height: 40px;
+}
+
+.button1{
+    width: 80px;
+    height: 50px;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+}
+.button2{
+    width: 80px;
+    height: 50px;
+    background-color: rgb(210, 158, 35);
+    color: white;
+    border-radius: 10px;
+}
+.kolom{
+    height: 150dvh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.full-client{
+    height: 60dvh;
+    width: 90dvh;
+    background-color: rgba(0, 0, 255, 0.242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.partial-client{
+    height: 60dvh;
+    width: 90dvh;
+    background-color: #ffff864d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.judul{
+    width: 80dvh;
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+}
+
+.paragraf{
+    width: 80dvh;
+    text-align: center;
+    padding: 10px 0px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.footer-1{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.39);
+    width: 100%;
+    font-size: 2.5vh;
+    color: white;
+}
+
+.footer-1 ul{
+    list-style: none;
+}
+
+.footer-1 li{
+    display: inline-block;
+    margin: 4vh;
+}
+
+.footer-2{
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2.5vh;
+    color: white;
+    flex-direction: column;
+}
+
+.footer-2 img{
+    width: 50vh;
+    height: 50vh;
+    margin-top: -15vh;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img src="logo point blank.png">
+        </div>
+        <div>
+            <ul>
+                <li><a href="#home">Home </a></li>
+                <li><a href="#p roduk">Produk</a></li>
+                <li><a href="#kategori">Kategori</a></li>
+\
+            </ul>
+        </div>
+        <div>
+            <button class="button1">REGISTRASI</button>
+            <button class="button2">LOGIN</button>
+            <button onclick="darkmode()">darkmode</button>
+            <button onclick="lightmode()">lightmode</button>
+        </div>
+        
+    </nav>
+    <main>
+        <div class="body">
+            <div class="kolom">
+                <div class="full-client">
+                    <div class="judul">
+                        <h1>FULL CLIENT</h1> 
+                    </div>
+                    <div class="paragraf">   
+                        <p>UKURAN CLIENT</p>
+                        <p>4.1 GB</p>
+                    </div>
+                    <div class="paragraf">   
+                        <p>UPDATE TERAKHIR</p>
+                        <p>2023-05-25</p>
+                    </div>
+                    <div class="paragraf">   
+                        <p>CLIENT VASION</p>
+                        <p>PBID BEYOND LIMIT 002</p>
+                    </div>
+                </div>
+                <div class="partial-client">
+                    <div class="judul">
+                        <h1>PARTIAL CLIENT</h1> 
+                    </div>
+                    <div class="paragraf">   
+                        <p>UKURAN CLIENT</p>
+                        <p>4.1 GB</p>
+                    </div>
+                    <div class="paragraf">   
+                        <p>UPDATE TERAKHIR</p>
+                        <p>2023-05-25</p>
+                    </div>
+                    <div class="paragraf">   
+                        <p>CLIENT VASION</p>
+                        <p>PBID BEYOND LIMIT 002</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-1">
+            <ul>
+                <li>PB E-SPORTS</li>
+                <li>PRIVACY NOTICE</li>
+                <li>TERMS OF SERVICE</li>
+                <li>GAME MANAGEMENT NOTICE</li>
+                <li>VOUCHER RESELLER</li>
+            </ul>
+        </div>
+        <div class="footer-2">
+            <img src="zeppeto-removebg-preview.png" alt="">
+            <P style="margin-top: -10vh;">jika ada pertanyaan silahkan kirimkan ticket melalui website(https://www.pointblank.id/ticket/form)</P>
+            <p style="color:rgba(128, 128, 128, 0.622); font-size: 2vh; margin-top: 2vh;">Copyright pt. Zepetto interactive indonesia all rights reserved</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
+
